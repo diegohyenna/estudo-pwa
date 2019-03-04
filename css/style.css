@@ -13,7 +13,7 @@ body {
   background-color: #dde1e2;
   width: 100%;
   /*esta merda tira o refresh da pagina*/
-  /* overscroll-behavior-y: contain; */
+  overscroll-behavior-y: contain;
 }
 
 /* Personalizados */
