@@ -12,6 +12,7 @@ body {
   font-size: 16px;
   background-color: #dde1e2;
   width: 100%;
+  /*esta merda tira o refresh da pagina*/
   overscroll-behavior-y: contain;
 }
 
