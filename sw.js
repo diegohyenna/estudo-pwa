@@ -1,8 +1,8 @@
 importScripts('js/sw-util.js');
 
-const STATIC_CACHE = 'static-v4';
+const STATIC_CACHE = 'static-v5';
 const INMUTABLE_CACHE = 'inmutable-v1';
-const DYNAMIC_CACHE = 'dynamic-v3';
+const DYNAMIC_CACHE = 'dynamic-v4';
 
 const APP_SHELL = [
   // '/',
@@ -70,7 +70,7 @@ self.addEventListener('fetch', e => {
     .then( res => {
       if(res){
         return res;
-      }else{
+      }else if(!e.request.includes('style.css')){
         return fetch(e.request)
           .then( newRes => {
             return atualizaCacheDinamico(DYNAMIC_CACHE, e.request, newRes);
