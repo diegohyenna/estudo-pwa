@@ -7,7 +7,7 @@ const DYNAMIC_CACHE = 'dynamic-v3';
 const APP_SHELL = [
   // '/',
   'index.html',
-  'css/style.css',
+  // 'css/style.css',
   'img/favicon.ico',
   'img/avatars/hulk.jpg',
   'img/avatars/ironman.jpg',
